@@ -3,11 +3,20 @@ function computerPlay() {
   let randomIndex = Math.floor(Math.random() * choices.length);
   return choices[randomIndex];
 }
+
+const checkUserInputValidity =
+  playerSelection !== "rock" ||
+  playerSelection !== "paper" ||
+  playerSelection !== "scissors";
+
 function playRound(playerSelection, computerSelection) {
   //   playerSelection = playerSelection.toLowerCase();
 
   if (playerSelection.trim() === "") {
     alert("Input can not be empty");
+  }
+  if (checkUserInputValidity) {
+    alert("Please enter a valid input ie. rock,paper,scissors");
   }
   if (playerSelection === computerSelection) {
     return "It's a tie!";
