@@ -104,8 +104,8 @@ function resultStyle(result, e) {
   }
 }
 
-reset_button.addEventListener("click", () => {
-  userScore_span.textContent = 0;
-  computerScore_span.textContent = 0;
-  resultText_p.textContent = `To begin choose one from rock, paper or scissor`;
-});
+// reset_button.addEventListener("click", () => {
+//   userScore_span.textContent = 0;
+//   computerScore_span.textContent = 0;
+//   resultText_p.textContent = `To begin choose one from rock, paper or scissor`;
+// });
