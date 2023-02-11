@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+
+    <title>Rock Paper Scissors</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <div class="score-board">
+      <div class="badge" id="comp-label">Computer</div>
+      <div class="badge" id="user-label">User</div>
+      <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+
+    <div class="result">
+      <p id="round-result"></p>
+      <p id="result-text">To begin choose one from rock, paper or scissor</p>
+    </div>
+
+    <section class="choices">
+      <picture class="choice" id="rock">
+        <img src="./images/rock.png" />
+      </picture>
+
+      <picture class="choice" id="paper">
+        <img src="./images/paper.png" />
+      </picture>
+
+      <picture class="choice" id="scissor">
+        <img src="./images/scissor.png" />
+      </picture>
+    </section>
+
+    <div class="button">
+      <button class="action-button">Reset</button>
+    </div>
+  </body>
+</html>
