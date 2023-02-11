@@ -46,6 +46,7 @@ function startGame(userChoice) {
     userScore++;
     userScore_span.textContent = userScore;
     resultText_p.textContent = `Computer tried to block your ${userChoice} with ${compChoice} and failed... You Won 🔥🔥`;
+    console.log("You guessed right and won!!!");
     return "win";
   } else if (
     (userChoice === "rock" && compChoice === "paper") ||
@@ -55,6 +56,7 @@ function startGame(userChoice) {
     computerScore++;
     computerScore_span.textContent = computerScore;
     resultText_p.textContent = `Computer blocked your ${userChoice} with ${compChoice} successfully... You Lost 😭😭`;
+    console.log("You guessed wrong and lost!!!");
     return "loss";
   }
 }
@@ -67,6 +69,7 @@ function result_text() {
     userScore_span.textContent = 0;
     computerScore_span.textContent = 0;
     resultText_p.textContent = `To begin choose one from rock, paper or scissor`;
+    console.log("You won this round");
   } else if (computerScore === 5) {
     roundResult_p.textContent = "You lost this round";
     userScore = 0;
@@ -74,6 +77,7 @@ function result_text() {
     userScore_span.textContent = 0;
     computerScore_span.textContent = 0;
     resultText_p.textContent = `To begin choose one from rock, paper or scissor`;
+    console.log("You lost this round");
   }
 
   setTimeout(() => {
