@@ -5,6 +5,10 @@ function computerPlay() {
 }
 function playRound(playerSelection, computerSelection) {
   //   playerSelection = playerSelection.toLowerCase();
+
+  if (playerSelection.trim() === "") {
+    alert("Input can not be empty");
+  }
   if (playerSelection === computerSelection) {
     return "It's a tie!";
   } else if (
