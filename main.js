@@ -4,17 +4,14 @@ function computerPlay() {
   return choices[randomIndex];
 }
 
-const checkUserInputValidity =
-  playerSelection !== "rock" ||
-  playerSelection !== "paper" ||
-  playerSelection !== "scissors";
-
 function playRound(playerSelection, computerSelection) {
-  //   playerSelection = playerSelection.toLowerCase();
-
   if (playerSelection.trim() === "") {
     alert("Input can not be empty");
   }
+  const checkUserInputValidity =
+    playerSelection !== "rock" ||
+    playerSelection !== "paper" ||
+    playerSelection !== "scissors";
   if (checkUserInputValidity) {
     alert("Please enter a valid input ie. rock,paper,scissors");
   }
